@@ -23,9 +23,6 @@ class Product_1_page(Base):
     # выбирает кнопку поиск
 
 
-    # Actions
-
-
     # Methods
     def assert_product_1(self):
         self.assert_word(self.get_name_product_1(), "Спальный мешок пуховый Сплав Mission Light серый")

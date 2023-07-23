@@ -18,15 +18,9 @@ class Find_page(Base):
 
 
     # Getters
-
-    # def get_slider_price_left(self):
-    #     return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.slider_price_left)))
-    # выбирает левый ползунок цены
-
     def get_product_1(self):
         return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.product_1)))
     # выбирает product 1
-
 
 
     # Actions
@@ -34,22 +28,6 @@ class Find_page(Base):
         self.get_product_1().click()
         print("click product 1")
         # кликает product 1
-
-    # def change_price_slider(self):
-    #     price = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.slider_price_left)))
-    #     self.get_slider_price_left().click_and_hold().move_by_offset(10, 0).release()
-    #     print("move slider")
-    #     # кликает поле ввода поиска
-
-    # def input_name_product(self, input_name_product):
-    #     self.get_input_text().send_keys(input_name_product)
-    #     print("input name product")
-    #     # вводит текст  для поиска
-    #
-    # def click_button_find(self):
-    #     self.get_button_find().click()
-    #     print("click button find")
-    #     # кликает поле кнопку поиск
 
 
     # Methods
